@@ -1,5 +1,49 @@
 # tts-arabic-pytorch
 
+All thanks for : https://github.com/nipponjo/tts-arabic-pytorch?tab=readme-ov-file 
+
+🚀 Exciting Progress in Text-to-Speech (TTS) Technology: Overcoming Challenges and Achieving Milestones! 🚀
+
+Hey LinkedIn community,
+
+I’m thrilled to share an update on our latest endeavor in the realm of Text-to-Speech (TTS) technology. Over the past few weeks, my team and I have been diving deep into the fascinating world of TTS using advanced models and overcoming significant challenges. Here’s a behind-the-scenes look at what we’ve accomplished and the hurdles we’ve tackled along the way:
+
+🔍 Project Overview:
+Our goal was to implement high-quality Arabic TTS systems using NVIDIA NeMo and alternative open-source models. This involved:
+
+Leveraging NVIDIA NeMo TTS: Initially, we explored NVIDIA’s NeMo framework for TTS. However, running NeMo on Windows proved problematic due to compatibility issues, leading us to set up Ubuntu via WSL (Windows Subsystem for Linux).
+
+Switching to tts-arabic-pytorch: Due to unresolved issues with NeMo, we pivoted to tts-arabic-pytorch, which offers a robust suite of TTS models including Tacotron2, FastPitch, and HiFi-GAN. These models are trained on Nawar Halabi's Arabic Speech Corpus, and they promise high fidelity and efficient speech synthesis.
+
+🛠️ Challenges and Solutions:
+1. Compatibility Issues with NeMo:
+
+Challenge: NeMo’s TTS functionalities required a Linux environment, which led to difficulties in running it seamlessly on Windows.
+Solution: Installed Ubuntu on WSL, but faced additional issues that hindered progress. This pivoted our focus to alternative solutions.
+2. Transition to tts-arabic-pytorch:
+
+Challenge: Setting up and configuring the new models required manual intervention and extensive testing.
+Solution: Implemented pretrained weights for Tacotron2, FastPitch, and HiFi-GAN. Configured inference options and ensured smooth integration with our setup.
+3. Model Training and Evaluation:
+
+Challenge: The models required substantial training and fine-tuning with a variety of parameters.
+Solution: Successfully trained the models with additional adversarial loss to enhance speech clarity and evaluated their performance rigorously.
+🌟 Key Achievements:
+Advanced TTS Models: Implemented and tested Tacotron2, FastPitch, and HiFi-GAN for generating high-quality Arabic speech.
+Multispeaker Capabilities: Added multispeaker weights to FastPitch, including additional male and female voices.
+Web Application Development: Developed a FastAPI-based web app for real-time TTS inference, making it accessible and user-friendly.
+🔗 Key Resources and References:
+Tacotron2 Paper: Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions
+FastPitch Paper: FastPitch: Parallel Text-to-speech with Pitch Prediction
+HiFi-GAN Paper: HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis
+🎉 What’s Next:
+We’re excited to continue refining our models and expanding their capabilities. Stay tuned for more updates as we push the boundaries of TTS technology!
+
+A big thank you to the team for their relentless effort and innovation. Looking forward to sharing more breakthroughs soon!
+
+Feel free to reach out if you have any questions or would like to discuss TTS technology and applications further. Let’s keep pushing the envelope!
+
+
 TTS models (Tacotron2, FastPitch), trained on [Nawar Halabi](https://github.com/nawarhalabi)'s [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/), including the [HiFi-GAN vocoder](https://github.com/jik876/hifi-gan) for direct TTS inference.
 
 <div align="center">
